@@ -1,0 +1,601 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.header {
+    background-image: url('img/home-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 900px;
+    color: white;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    /* position: fixed;
+    top: 0; */
+    z-index: 9999;
+    background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a217a+0,1c1364+100 */
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #2a217a 0%, #1c1364 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #2a217a 0%, #1c1364 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #2a217a 0%, #1c1364 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a217a', endColorstr='#1c1364', GradientType=1);
+    /* IE6-9 */
+    opacity: .9;
+}
+
+.navigation h1 {
+    cursor: pointer;
+}
+
+.navigation nav {
+    align-self: center;
+    margin-left: 100px;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    padding: 15px 0;
+}
+
+.navigation a:hover {
+    color: #f84b67;
+}
+
+.li1 {
+    position: relative;
+}
+
+.li1:hover .innerDiv1 {
+    display: block;
+}
+
+.innerDiv1 {
+    display: none;
+}
+
+.innerDiv1 p {
+    cursor: pointer;
+    transition: .5s;
+    padding: 5px 50px 5px 10px;
+}
+
+.innerDiv1 p:hover {
+    color: #f84b67;
+}
+
+.navigation .innerDiv1 {
+    position: absolute;
+    background-color: #edf1f6;
+    color: #1f2338;
+    top: 150%;
+    left: 10%;
+    padding: 10px;
+}
+
+.li2 {
+    position: relative;
+}
+
+.li2:hover .innerDiv2 {
+    display: block;
+}
+
+.innerDiv2 {
+    display: none;
+}
+
+.innerDiv2 p {
+    cursor: pointer;
+    transition: .5s;
+    padding: 5px 50px 5px 10px;
+}
+
+.innerDiv2 p:hover {
+    color: #f84b67;
+}
+
+.navigation .innerDiv2 {
+    position: absolute;
+    background-color: #edf1f6;
+    color: #1f2338;
+    top: 150%;
+    left: 10%;
+    padding: 10px;
+    width: max-content;
+}
+
+.signUpBtn {
+    align-self: center;
+    padding: .9em 3em;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #222;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.headerHero {
+    position: absolute;
+    top: 50%;
+    right: 14%;
+    width: 450px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(0, -50%);
+}
+
+.headerHero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+}
+
+.headerHero p {
+    font-size: 15px;
+    line-height: 2;
+}
+
+.beginFreeTrialBtn {
+    padding: 1.1em 3em;
+    border: 1px solid darkblue;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-color: #f84b67;
+    align-self: flex-start;
+    transition: .5s;
+}
+
+.beginFreeTrialBtn:hover {
+    opacity: .8;
+}
+
+.introSection {
+    margin: 150px 0 100px;
+}
+
+.introSection ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.introSection li {
+    padding: 50px 30px;
+    min-height: 350px;
+    max-width: 350px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #edf1f6;  
+}
+
+.marginLi {
+    position: relative;
+    top: 50px;
+}
+
+.introSection h3 {
+    font-size: 20px;   
+    color: #1d1d1d;
+    font-weight: 100; 
+}
+
+.introSection p {
+    color: #7f7f7f;
+    line-height: 2;
+}
+
+.readMoreBtn {
+    background-color: transparent;
+    position: relative;
+    border: 1px solid #d8d8d8;
+    align-self: flex-start;
+    padding: .2em .8em;
+    cursor: pointer;
+}
+
+.readMoreBtn::after {
+    content: "";
+    position: absolute;
+    background-color: #f84b67;
+    height: 2px;
+    width: 100%;
+    top: 100%;
+    right: 0%;
+    transition: 1s;
+    opacity: 0;
+}
+
+.readMoreBtn:hover::after {
+    opacity: 1;
+}
+
+.svg {
+    width: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.introSection .circle {
+    position: relative;
+    z-index: 1;
+}
+
+.introSection .circle1::before {
+    position: absolute;
+    background-color: #fca6a6;
+    width: 80px;
+    height: 80px;
+    content: "";
+    border-radius: 50%;
+    top: -50%;
+    left: 0%;
+    z-index: -1;
+}
+
+.introSection .circle2::before {
+    position: absolute;
+    background-color: #71beb4;
+    width: 80px;
+    height: 80px;
+    content: "";
+    border-radius: 50%;
+    top: -50%;
+    left: 0%;
+    z-index: -1;
+}
+
+.introSection .circle3::before {
+    position: absolute;
+    background-color: #ed92dd;
+    width: 80px;
+    height: 80px;
+    content: "";
+    border-radius: 50%;
+    top: -50%;
+    left: 0%;
+    z-index: -1;
+}
+
+.main {
+    min-height: 830px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main::after {
+    position: absolute;
+    content: url('img/about1.png');
+    left: 90%;
+    bottom: 15%;
+}
+
+.mainTop {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mainTop h1 {
+    font-size: 45px;
+    color: #1d1d1d;
+    font-weight: bolder;
+    line-height: 58px;
+    padding-right: 100px;
+}
+
+.mainTop h4 {
+    color: #1d1d1d;
+    font-weight: 100;
+}
+
+.mainTop p {
+    color: #7f7f7f;
+    font-size: 14px;
+    line-height: 27px;
+    padding-right: 170px;
+}
+
+.mainBottom {
+    margin-top: 50px;
+}
+
+.mainBottom  ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.mainBottom li {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cloud {
+    margin-left: 50px;
+}
+
+.circle4 {
+    position: relative;
+}
+
+.circle4::before {
+    position: absolute;
+    background-color: #fca6a6;
+    width: 80px;
+    height: 80px;
+    content: "";
+    border-radius: 50%;
+    top: -50%;
+    left: 0%;
+    z-index: -1;
+}
+
+.truck {
+    margin-left: 50px;
+}
+
+.circle5 {
+    position: relative;
+}
+
+.circle5::before {
+    position: absolute;
+    background-color: #71beb4;
+    width: 80px;
+    height: 80px;
+    content: "";
+    border-radius: 50%;
+    top: -50%;
+    left: 0%;
+    z-index: -1;
+}
+
+.mainBottom h3 {
+    color: #1d1d1d;
+}
+
+.mainBottom p {
+    color: #7f7f7f;
+}
+
+.mobileApplication {
+    width: 100%;
+    min-height: 800px;
+    background-color: #2b237c;
+    color: white;
+}
+
+.mobileApp {
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    justify-content: center;
+    margin-left: 650px;
+    position: relative;
+}
+
+.mobileApp::before {
+    position: absolute;
+    content: url('img/about2.png');
+    right: 125%;
+}
+
+.mobileApplicationTop {
+    margin-bottom: 20px;
+}
+
+.mobileApplicationTop h1{
+    font-size: 45px;
+    line-height: 58px;
+    width: 380px;
+}
+
+.mobileApplicationTop p {
+    font-size: 15px;
+    line-height: 27px;
+    width: 430px;
+    margin-top: 20px;
+}
+
+.mobileApplicationBottom {
+    margin-top: 20px;
+}
+
+.mobileApplicationBottom ul {
+    list-style-type: none;
+}
+
+.mobileApplicationBottom li {
+    padding-left: 100px;
+    position: relative;
+}
+
+.mobileApplicationBottom li::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #71beb4;
+    top: 15%;
+    right: 88%;
+}
+
+.mobileApplicationBottom h3 {
+    font-weight: 100;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.mobileApplicationBottom h3::before {
+    position: absolute;
+    content: url('img/frame.svg');
+    width: 50px;
+    height: 50px;
+    top: 100%;
+    left: -25%;
+}
+
+.mobileApplicationBottom p {
+    width: 500px;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    padding: 50px 0;
+}
+
+.formRight {
+    align-self: center;
+    padding: 0 100px;
+}
+
+.formRight h1 {
+    color: #1d1d1d;
+    font-size: 45px;
+    line-height: 58px;
+    margin-bottom: 40px;
+}
+
+.formRight h4 {
+    color: #333333;
+    font-size: 16px;
+    word-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.formRight p {
+    color: #7f7f7f;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.sponsors {
+    margin: 70px 0 50px;
+}
+
+.sponsors ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sponsors img {
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #1f2338;
+    color: white;
+}
+
+.footer ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+}
+
+.footer li {
+    min-height: 300px;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.footer li h3 {
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.footer li p {
+    color: #7f7f7f;
+    margin-bottom: 15px;
+}
+
+.input {
+    padding: 1em 10em 1em 1em;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+}
+
+.foot {
+    background-color: #1f2338;
+    color: #7f7f7f;
+    padding: 25px 0;
+}
+
+.foot p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.foot span {
+    color: #f84b67; 
+}
+
+.footContent {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footContent::before {
+    position: absolute;
+    content: "";
+    background-color: #7f7f7f;
+    width: 100%;
+    height: 1px;
+    top: -100%;
+}
+
+.footContent img {
+    cursor: pointer;
+    margin-left: 30px;
+}
